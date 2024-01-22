@@ -1,11 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hockey assignment</title>
+    <!-- styles link  -->
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- tailwind and daisy ui  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font manrope -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- font awesome  -->
+
+    <script src="https://kit.fontawesome.com/d41afb0b41.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    
+
+<!-- body  -->
+
+<body class="font-manrope mx-w-[1075px] m-auto">
+
+    <!-- header section  -->
+
+    <header class="md:container md:mx-auto mb-10">
+
+        <!-- nav bar section  -->
+
+        <nav class="mb-7">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-base rounded-box w-52">
+                            <li><a><span class="text-[#FF4240] font-medium">Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class=" text-black font-extrabold text-xl lg:text-4xl">Hockey<span
+                            class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal text-base lg:pr-[400px] px-1">
+                        <li><a><span class="text-[#FF4240] font-medium">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+
+                    <button class="btn btn-ghost  btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+
+                    <a
+                        class=" text-white font-medium text-[16px] h-14 w-36 px-6 py-4 rounded-lg items-center justify-center text-center bg-[#FF4240]">Get
+                        Ticket</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- carousel  -->
+
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full lg:h-[550px]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/2.png" class="w-full lg:h-[550px]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/3.png" class="w-full lg:h-[550px]" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- main section  -->
+
+    <main class="md:container md:mx-auto mb-10">
+
+        <!-- Professional Hockeys Club  -->
+
+        <section>
+            <div class="text-center">
+                <h1 class="font-extrabold text-4xl text-black pb-6">Professional Hockeys Club</h1>
+                <p class="text-[#13131899] pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat <br> dolor. Purus urna in sit nullam proin.</p>
+            </div>
+            <div class="lg:flex justify-around text-center">
+                <div class="mb-7">
+                    <div class="">
+                        <div class=" radial-progress text-[#FF4240]" style="--value:87;" role="progressbar"><span
+                                class="text-black font-extrabold text-xl">87%</span></div>
+                    </div>
+                    <h4 class="pt-5 font-semibold text-2xl">Prayer Facility</h4>
+                    <p class="">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="mb-7">
+                    <div class="">
+                        <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span
+                                class="text-black font-extrabold text-xl">95%</span></div>
+                    </div>
+                    <h4 class="pt-5 font-semibold text-2xl">Prayer Facility</h4>
+                    <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="mb-7">
+                    <div class="">
+                        <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span
+                                class="text-black font-extrabold text-xl">90%</span></div>
+                    </div>
+                    <h4 class=" pt-5 font-semibold text-2xl">Prayer Facility</h4>
+                    <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="mb-7">
+                    <div class="">
+                        <div class="radial-progress text-[#4C8DF1]" style="--value:90;" role="progressbar"><span
+                                class="text-black font-extrabold text-xl">80%</span></div>
+                    </div>
+                    <h4 class=" pt-5 font-semibold text-2xl">Prayer Facility</h4>
+                    <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Program Sections -->
+
+        <section class="mt-16">
+            <div class="text-center">
+                <h2 class="text-black font-extrabold text-4xl">Program Sections</h2>
+                <p class="text-[#13131899] text-base font-medium pt-6">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <!-- 1st images  -->
+                <div class="">
+                    <div class="hero rounded-3xl h-[340px] " style="background-image: url(./Images/2.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button
+                                    class="  text-white font-bold text-[20px] h-14 w-48 px-6 py-3 rounded-lg items-center justify-center text-center bg-[#FF4240]">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd images  -->
+                <div class="">
+                    <div class="hero h-[340px] " style="background-image: url(./Images/3.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button
+                                    class="  text-white font-bold text-[20px] h-14 w-48 px-6 py-3 rounded-lg items-center justify-center text-center bg-[#FF4240]">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3d images  -->
+                <div>
+                    <div class="hero h-[430px] w-[1520px]" style="background-image: url(./Images/4.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-neutral-content">
+                            <div class="pt-36 -ml-[1000px]">
+                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. <br> Quaerat fugiat ut assumenda
+                                    <br> exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
+                                </p>
+                                <button
+                                    class="  text-white font-bold text-[20px] h-14 w-48 px-6 py-3 rounded-lg items-center justify-center text-center bg-[#FF4240]">Register
+                                    Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our New Products -->
+
+        <section class="mt-24">
+            <div class="text-center">
+                <h2 class="text-black font-extrabold text-4xl">Our New Products</h2>
+                <p class="text-[#13131899] text-base font-medium pt-5 pb-28">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+
+            <div class="lg:flex gap-10 mb-8">
+                <div class="card lg:w-[740px] card-side bg-base-100 boarder">
+                    <figure><img class="pl-8" src="Images/5.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye -ml-7"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart -ml-9"></i>
+                            <p>200</p>
+                        </div>
+                        <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#FF4240] font-extrabold text-[18px]">Price - $22.00</span>
+                            <i class="fa-solid fa-cart-shopping text-amber-400"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lg:w-[740px] card-side bg-base-100 boarder ">
+                    <figure><img class="pl-8" src="Images/6.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye -ml-7"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart -ml-9"></i>
+                            <p>200</p>
+                        </div>
+                        <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#FF4240] font-extrabold text-[18px]">Price - $22.00</span>
+                            <i class="fa-solid fa-cart-shopping text-amber-400"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="lg:flex gap-10 mb-8">
+                <div class="card lg:w-[740px] card-side bg-base-100 boarder ">
+                    <figure><img class="pl-8" src="Images/7.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye -ml-7"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart -ml-9"></i>
+                            <p>200</p>
+                        </div>
+                        <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#FF4240] font-extrabold text-[18px]">Price - $22.00</span>
+                            <i class="fa-solid fa-cart-shopping text-amber-400"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lg:w-[740px] card-side bg-base-100 boarder ">
+                    <figure><img class="pl-8" src="Images/8.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye -ml-7"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart -ml-9"></i>
+                            <p>200</p>
+                        </div>
+                        <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#FF4240] font-extrabold text-[18px]">Price - $22.00</span>
+                            <i class="fa-solid fa-cart-shopping text-amber-400"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:flex gap-10 mb-8">
+                <div class="card lg:w-[740px] card-side bg-base-100 boarder ">
+                    <figure><img class="pl-8" src="Images/9.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye -ml-7"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart -ml-9"></i>
+                            <p>200</p>
+                        </div>
+                        <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#FF4240] font-extrabold text-[18px]">Price - $22.00</span>
+                            <i class="fa-solid fa-cart-shopping text-amber-400"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lg:w-[740px] card-side bg-base-100 boarder">
+                    <figure><img class="pl-8" src="Images/10.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye -ml-7"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart -ml-9"></i>
+                            <p>200</p>
+                        </div>
+                        <h2 class="card-title font-extrabold text-[20px]">World Cup Flags Football</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#FF4240] font-extrabold text-[18px]">Price - $22.00</span>
+                            <i class="fa-solid fa-cart-shopping text-amber-400"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- footer section  -->
+
+    <footer>
+
+    </footer>
+
+
 </body>
+
 </html>
