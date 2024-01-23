@@ -6,3 +6,45 @@
     
 border: 1px solid rgba(19, 19, 24, 0.10);
 }
+
+.border{
+    border-radius: 16px;
+border: 1px solid rgba(19, 19, 24, 0.10);
+
+
+    height: 550px;
+
+}
+
+.phone-number{
+    border-radius: 16px;
+background: rgba(188, 237, 109, 0.10);
+width: 374px;
+height: 216px;
+flex-shrink: 0;
+margin-bottom: 20px;
+}
+
+.email{
+    border-radius: 16px;
+    background: rgba(253, 221, 95, 0.10);
+    width: 374px;
+    height: 216px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+.location{
+    border-radius: 16px;
+    background: rgba(98, 156, 243, 0.10);
+    width: 374px;
+height: 184px;
+flex-shrink: 0;
+margin-bottom: 20px;
+}
+
+.phone-email-location{
+    border-radius: 16px;
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    width: 474px;
+}
